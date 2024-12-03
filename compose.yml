@@ -2,8 +2,8 @@ services:
   database:
     container_name: SQL-EVAL2-SIO2-database
     image: mariadb:latest
-#    ports:
-#      - "3306:3306"
+    ports:
+      - "3306:3306"
     restart: always
     environment:
       MYSQL_DATABASE: app_db
